@@ -1,0 +1,65 @@
+// containerCalendrierHours.innerHTML = "";
+// let startHour = new Date();
+// startHour.setHours(9, 0, 0, 0);  // 09:00:00
+
+// const backToDaysBtn = document.createElement('span');
+// backToDaysBtn.classList.add('backToDays');
+// backToDaysBtn.innerHTML = "<i class='fa fa-arrow-left'></i>"
+// containerCalendrierHours.appendChild(backToDaysBtn);
+
+// const splitDate = date.split('-');
+// const dateToShow = `${splitDate[2]}/${splitDate[1]}/${splitDate[0]}`;
+
+// const titleHoursModalWithDate = document.createElement('p');
+// titleHoursModalWithDate.className = 'dateModalHours';
+// titleHoursModalWithDate.innerText = `${dateToShow}`;
+// containerCalendrierHours.appendChild(titleHoursModalWithDate);
+
+// const hoursWrapper = document.createElement('div');
+// hoursWrapper.classList.add('hours-wrapper');
+// containerCalendrierHours.appendChild(hoursWrapper);
+
+// backToDaysBtn.addEventListener('click', function() {
+//   containerCalendrierHours.classList.toggle('activate-hours');
+//   wrapperCalendrierJours.classList.toggle('activate-days');
+// })
+
+// for (let n = 0; n < 18; n++) {  // 18 itérations pour 9h00 à 17h30
+//   let hours = startHour.getHours().toString().padStart(2, '0');
+//   let minutes = startHour.getMinutes().toString().padStart(2, '0');
+//   let seconds = "00";  // On garde les secondes à 00
+
+//   // Format HH:mm:ss
+//   let formattedTime = `${hours}:${minutes}:${seconds}`;
+//   let formattedTimeToShow = `${hours}:${minutes}`;
+
+//   let classHour = "btn_enabled"
+//   let isItDisabled = "";
+//   datas.forEach(data => {
+//     if(data.hour === formattedTime) {
+//       classHour = "btn_disabled";
+//       isItDisabled = "disabled";
+//     }
+//   })
+
+//   hoursWrapper.innerHTML += `<button class="btn_reservation ${classHour}" 
+//       data-date="${date}" 
+//       data-hour="${formattedTime}"
+//       data-formatted="${formattedTime}"
+//       data-formatted-to-show="${formattedTimeToShow}" ${isItDisabled}>
+//       ${formattedTimeToShow}
+//     </button>`
+//     // Incrémente l'heure de 30 minutes
+//     startHour.setMinutes(startHour.getMinutes() + 30);
+// }
+// document.querySelectorAll('.btn_reservation').forEach(button => {
+//   button.addEventListener('click', function() {
+//     const selectedDate = this.getAttribute('data-date');
+//     const selectedHour = this.getAttribute('data-hour');
+//     const formattedTime = this.getAttribute('data-formatted');
+//     const formattedTimeToshow = this.getAttribute('data-formatted-to-show');
+    
+//     // Ouvrir la modal et afficher les informations
+//     openModal(selectedDate, selectedHour, formattedTime, formattedTimeToshow);
+//   });
+// });

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="preconnect"
+    />
+  </head>
+  <body>
+    <!-- <span
+      >Une date comme <span class="btn_day_not_opened">20</span></span
+      >, indique un jour fermé ou une absence</span
+    ><br /><br> 
+    <span
+      >Une date comme <span class="active-exemple"><span><b>31</b></span></span> indique le jour
+      d'aujourd'hui</span
+    > -->
+    <div class="body-reservation-form">
+      <div class="wrapper__calender-hours">
+        <div class="calendar-container activate-days">
+          <header class="calendar-header">
+            <p class="current-month-year"></p>
+            <div class="calendar-navigation">
+              <span id="calendar-prev" class="material-symbols-rounded">
+                <i class="fa fa-chevron-left fa-xs"></i>
+              </span>
+              <span id="calendar-next" class="material-symbols-rounded">
+                <i class="fa fa-chevron-right fa-xs"></i>
+              </span>
+            </div>
+          </header>
+
+          <div class="calendar-body">
+            <ul class="calendar-weekdays">
+              <li>Dim</li>
+              <li>Lun</li>
+              <li>Mar</li>
+              <li>Mer</li>
+              <li>Jeu</li>
+              <li>Ven</li>
+              <li>Sam</li>
+            </ul>
+            <ul class="calendar-dates"></ul>
+          </div>
+        </div>
+        <div class="hours-container"></div>
+      </div>
+
+      <div class="modal-reservation" style="display: none">
+        <div class="modal-content-reservation">
+          <span class="modal-close-reservation">&times;</span>
+          <div class="modal-body-reservation">
+            <!-- Les informations seront ajoutées ici dynamiquement -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0433bfbe12.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </body>
+</html>

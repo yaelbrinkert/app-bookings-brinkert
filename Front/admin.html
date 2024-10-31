@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espace d'administration</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="preconnect"
+    />
+  </head>
+  <body>
+    <div class="section-admin">
+      <nav class="navbar-admin">
+        <div class="menu-open-nav-admin">
+          <i class="fa fa-bars-staggered"></i>
+        </div>
+        <div class="wrapper__items__nav_admin">
+          <div class="logout-admin">
+            Se déconnecter <i class="fa fa-right-from-bracket"></i>
+          </div>
+          <div class="profil-admin">Profil <i class="fa fa-user"></i></div>
+        </div>
+      </nav>
+      <!---->
+      <h1 id="welcomeAdmin"></h1>
+      <div class="wrapper__dashboard">
+        <ul class="wrapper__dashboard__navbar">
+          <li
+            class="wrapper__dashboard__navbar__item active-item-nav-dashboard"
+            data-dashboard="rendezvous"
+          >
+            Vos rendez-vous
+          </li>
+          <li class="wrapper__dashboard__navbar__item" data-dashboard="params">
+            Paramètres
+          </li>
+          <li class="wrapper__dashboard__navbar__item" data-dashboard="others">
+            Autres
+          </li>
+        </ul>
+        <div class="wrapper__dashboard__container"></div>
+      </div>
+
+      <!-- modal -->
+      <div class="wrapper__number__day">
+        <div class="wrapper__number__day__item">
+          <div class="modal__item__infos"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/adminLogged.js"></script>
+    <script src="./assets/main-admin.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0433bfbe12.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </body>
+</html>

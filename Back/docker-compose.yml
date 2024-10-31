@@ -1,0 +1,20 @@
+version: "3"
+services:
+  app:
+    image: node:14 # Utiliser une image Node.js
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "1234:1234" # Expose ton app en local sur le port 3000
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+    command: "npm start" # Commande de démarrage de l'app Node.js
+
+  redis:
+    image: redis:alpine # Utiliser l'image officielle Redis
+    ports:
+      - "6379:6379" # Expose Redis en local pour le debug si besoin
